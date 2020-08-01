@@ -3,11 +3,12 @@
 	<head>
 		<title>Hero Registration Form</title>
 		<meta charset= "utf-8">
+		<link rel="stylesheet" href="Css/one_page_website.css">
 	</head>
 	<body>
 	
 	<!-- Nav-->
-		<div>
+		<div class= "nav-container">
 			<div>
 				<ul>
 				<a href="#home" id="link"><li> Home</li> </a>
@@ -23,16 +24,16 @@
 	<div id="home">
 			<div>
 				<div>
-					<span><h1> Hero Registration Form</h1></span>
+					<h1> Hero Registration Form</h1>
 				</div>
 			</div>
 		</div>
 		<!-- Gallery-->
 		
-		<div id="Gallery">
-			<section>
-				<div id="Gallery">
-					<h1> Gallery</h1>
+		
+		<section>
+			<div id="Gallery">
+				<h1> Gallery</h1>
 					<div>
 		
 		
@@ -78,11 +79,11 @@
 		
 		<div id="Video">
 			<div>
-				 <iframe width="560" height="315" src="https://www.youtube.com/embed/1MBPVcIEhHw" frameborder="0" allow="accelerometer; autoplay;
+				 <iframe width="560" height="315" src="https://www.youtube.com/embed/1MBPVcIEhHw" allow="accelerometer; autoplay;
 				encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 				<div>
 				
-					<span><h1> My Hero Academia</h1></span>
+					<h1> My Hero Academia</h1>
 				</div>
 			</div>
 		</div>
@@ -91,22 +92,39 @@
 		
 		<!-- this is the hero reg form -->
 		
-		<div id="Registration">
-			<div>
-				<div>
-					<span><h1> Hero Registration Form</h1></span>
+		<section id="Power_Registration">
+
+			<div class="container">
+				<div class="reg-padding">
+					<h1> Registrations</h1>
+					<div class= registration>
+						<h2><span> UA </span>
+							<br/>Power Registration form
+						</h2>
+						<p class="reg text">
+						Please provide us with basic data on your powers and heros.
+						</p>
+						<div class= "registration form">
+							<form actions= "" method="post">
+								<input class= "reg" type= "text" value="" placeholder="First Name">
+								<input class= "reg" type= "text" value="" placeholder= "Last Name">
+								<input class= "reg" type= "text" value="" placeholder= "Power">
+								<input class= "reg" type= "text" value="" placeholder= "Hero">
+								<input class= "reg" type= "text" value="" placeholder= "Hero Name">
+								<div class ="terms"> 
+								</div>
+								<div class="form-spacer">
+									<label class= terms>Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	<form action="" method="get">
-		First Name: <input type="text" name= "First_Name"><br>
-		Last Name: <input type="text" name= "Last_Name"><br>
-		Hero Name: <input type="text" name= "Hero_Name"><br>
-		Power:<input type="text" name= "Power"><br>
-		Favorite Hero:<input type="text" name= "Favorite_Hero"><br>
-		Age: <input type="" name= "Age"><br>
-		<input type="submit" value="Submit">
-	</form>
+		</section>
 	<footer>
 	<div>
 			www.Hero registration &nbsp;|&nbsp; &copy; 2020
