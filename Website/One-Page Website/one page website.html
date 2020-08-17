@@ -3,6 +3,7 @@
 	<head>
 		<title>Hero Registration Form</title>
 		<meta charset= "utf-8">
+		<script src="JS/one_page_website.js"></script>
 		<link rel="stylesheet" href="Css/one_page_website.css">
 	</head>
 	<body>
@@ -34,44 +35,60 @@
 		<section>
 			<div id="Gallery">
 				<h1> Gallery</h1>
-					<div>
+<div>
 		
 		
 		
 		<!-- Photo-contanier 1-->
 				
-		<div>
-			<div>
-				<img src="./Images/Thumb/Thumbnail_1.jpg" alt="this is All Might" style= "width:50%; height:50%;">
-				<div>	
-					<h3> All might</h3>
-					<p> This is the number one hero</p>
-				</div>
+		<div class= "row">
+			<div class="column">
+				<img src="./Images/Thumb/Thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+				
+			<div class ="column">
+				<img src="./Images/Thumb/Thumbnail_2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
 			</div>
 		</div>
 				
-			<!-- End Photo-contanier 1-->	
-			<!-- Photo-contanier 2-->
-				
-		<div>
-			<div>
-				<img src="./Images/Thumb/Thumbnail_2.jpg" alt="this is Deku" style= "width:50%; height:50%;">
-				<div>
-					<h3> Deku</h3>
-					<p> This is Deku, All Might successor</p>
-				</div>
-			</div>
-		</div>
-				
-			<!-- End Photo-contanier 2-->
-			
-			
-				</div>
-			</div>
-		</section>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 2</div>
+		<img src="./Images/Thumb/Thumbnail_1.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 2</div>
+		<img src="./Images/Thumb/Thumbnail_2.jpg" style="width:100%">
+	  </div>
+	</div>
 		
-
-		<!-- End of gallery-->
+	 <!-- Next/previous controls -->
+	 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+	 <!-- Caption text -->
+	 <div class="caption-container">
+	   <p id="caption"></p>
+	 </div>
+ 
+	 <!-- Thumbnail image controls -->
+	 <div class="column">
+	   <img class="demo" src="./Images/Thumb/Thumbnail_1.jpg" onclick="currentSlide(1)" alt="All Might">
+	 </div>
+ 
+	 <div class="column">
+	   <img class="demo" src="./Images/Thumb/Thumbnail_2.jpg" onclick="currentSlide(2)" alt="Deku">
+	 </div>
+   </div>
+ </div>
+	 
+	 
+	  <!-- End of gallery-->
 		
 		
 		<!-- Video-->
