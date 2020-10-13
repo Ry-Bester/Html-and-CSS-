@@ -1,3 +1,16 @@
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    opacity: 1;
+    transition: 1s opacity;
+  }
+
+  body.fade-out {
+    opacity: 0;
+    transition: none;
+  }
+
 .row > .column {
     padding: 0 8px;
   }
@@ -123,3 +136,5 @@
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  

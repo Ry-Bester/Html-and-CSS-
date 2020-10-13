@@ -5,9 +5,15 @@
 		<meta charset= "utf-8">
 		<script src="JS/one_page_website.js"></script>
 		<link rel="stylesheet" href="Css/one_page_website.css">
+		<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	</head>
 	<body>
+		<script>document.body.className += 'fade-out';
 	
+		$(function() {
+			$('body').removeClass ('fade-out');
+		  });
+		</script>
 	<!-- Nav-->
 		<div class= "nav-container">
 			<div>
@@ -15,7 +21,8 @@
 				<a href="#home" id="link"><li> Home</li> </a>
 				<a href="#Gallery" id="link"> <li> Gallery</li> </a>
 				<a href="#Video" id="link"> <li> Video</li> </a>
-				<a href="#Registration" id="link"> <li> Registrations</li> </a>
+				<a href="#Power_Registration" id="link"> <li> Registrations</li> </a>
+				
 				</ul>
 			</div>
 		</div>
@@ -128,6 +135,7 @@
 								<input class= "reg" type= "text" value="" placeholder= "Power">
 								<input class= "reg" type= "text" value="" placeholder= "Hero">
 								<input class= "reg" type= "text" value="" placeholder= "Hero Name">
+								<input class= "reg" type= "text" value="" placeholder= "Phone number">
 								<div class ="terms"> 
 								</div>
 								<div class="form-spacer">
